@@ -580,7 +580,7 @@ class WifiphisherEngine:
             if args.known_beacons:
                 extensions.append(KNOWN_BEACONS_EXTENSION)
             if not args.force_hostapd:
-                extensions.append(KARMA)
+                extensions.append(ROGUEHOSTAPDINFO)
             self.em.set_extensions(extensions)
             self.em.init_extensions(shared_data)
             self.em.start_extensions()
